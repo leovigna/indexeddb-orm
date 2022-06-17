@@ -17,7 +17,8 @@
     "strict": true,
     "outDir": "dist",
     "declarationDir": "./dist",
-    "incremental": true
+    "incremental": true,
+    "emitDeclarationOnly": true,
   },
   "include": [
     "src/**/*.ts"

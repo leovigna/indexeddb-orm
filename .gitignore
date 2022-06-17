@@ -1,5 +1,6 @@
 .idea
 /node_modules
 /dist
+/lib
 .DS_Store
 dist/es2015/tsconfig.tsbuildinfo

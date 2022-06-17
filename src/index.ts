@@ -4,9 +4,20 @@ import { Migration } from './migration/migration.js';
 import {
   CursorDirection,
   RelationTypes,
-  TransactionModes,
+  //TransactionModes,
 } from './models/model.interface.js';
-import { Database } from './migration/migration.interface.js';
+//import { Database } from './migration/migration.interface.js';
+
+/*
+(() => {
+  //@ts-expect-error Global
+  if (typeof self === 'undefined' && typeof global === 'object') {
+    //@ts-expect-error Global
+    global.self = global;
+    //@ts-expect-error no types
+    require('fake-indexeddb/auto');
+  }
+})();
 
 ((self) => {
   self.idb = (schema: Database) => {
@@ -33,5 +44,6 @@ import { Database } from './migration/migration.interface.js';
     },
   };
 })(self as any);
+*/
 
 export { Connector, Model, Migration, RelationTypes, CursorDirection };

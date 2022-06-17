@@ -46,7 +46,6 @@ await esbuild.default.build({
 });
 
 //ESM Library
-/*
 await esbuild.default.build({
   entryPoints: files,
   bundle: false,
@@ -54,7 +53,6 @@ await esbuild.default.build({
   format: 'esm',
   ...baseConfig,
 });
-*/
 
 //CJS Bundle
 await esbuild.default.build({
